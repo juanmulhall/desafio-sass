@@ -6,41 +6,57 @@
     font-size: 15px;
     }
     
-    .card-header{
-        justify-content: center;
-        align-content: center;
-        display: inline-flex !important;
-        font-size: 15px;
+.card-header{
+    justify-content: center;
+    align-content: center;
+    display: inline-flex !important;
+    font-size: 15px;
+    }
+    
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-bottom: 130px;
+}
+    
+.contacto2{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-bottom: 20px;
+}
+    
+img {border-radius: 15px;}
+    
+.img {border-radius: 50px;
+    margin-bottom: 50px;
+    height: 350px !important;
+    width: 300px !important;
+    }
+    
+
+
+    /* ANIMACIONES */
+    
+    @keyframes fade-in{
+        0%{
+            transform: translateX(80px);
+            opacity: 0;    
         }
-    
-    .contacto{
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-        margin-bottom: 130px;
-    }
-    
-    .contacto2{
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-        margin-bottom: 20px;
-    }
-    
-    img {border-radius: 15px;}
-    
-    .img {border-radius: 50px;
-        margin-bottom: 50px;
-        height: 350px !important;
-        width: 300px !important;
+        100%{transform: translateX(150px);
+            opacity: 1;
         }
-    
-    .footer {
-        text-align: center;
-        background-color: rgba(211, 211, 211, 0.658);
-        width: 100vw;
-        bottom: 0;
     }
+    
+    @keyframes efecto3{
+        0%{
+            opacity: 0;    
+        }
+        100%{opacity: 1;
+        }
+    }
+
     /* 
     @media screen and (min-width: 768px){
     
@@ -101,22 +117,3 @@
             }
         } */
     
-    /* ANIMACIONES */
-    
-    @keyframes fade-in{
-        0%{
-            transform: translateX(80px);
-            opacity: 0;    
-        }
-        100%{transform: translateX(150px);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes efecto3{
-        0%{
-            opacity: 0;    
-        }
-        100%{opacity: 1;
-        }
-    }
